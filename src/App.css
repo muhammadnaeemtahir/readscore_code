@@ -1,0 +1,78 @@
+:root {
+    --color-light: #cccccc;
+    --color-dark-light: #161616;
+    --color-success: #45b29d;
+    --color-danger: #df5a49;
+    --color-warning: #fcb721;
+    --color-primary: #4f93ce;
+    --color-secondary: #6f5499;
+    --color-dark: #161616;
+}
+
+
+/* Auth styles: start */
+.auth .auth-cover {
+    background-image: url('../src/assets/images/auth-page-cover.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Auth styles: end */
+
+/* app card: start */
+.post-card .dropdown-toggle:is(:focus) {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.post-card .dropdown-toggle::after {
+    content: unset;
+}
+
+/* app card: end */
+
+/* text: start */
+.text-success {
+    color: var(--color-success) !important;
+}
+
+.text-danger {
+    color: var(--color-danger) !important;
+}
+
+.text-warning {
+    color: var(--color-warning) !important;
+}
+
+/* text: end */
+
+/* header: start */
+header .nav .nav-link .active {
+    color: var(--color-danger) !important;
+}
+
+/* header: end */
+
+/* buttons: start */
+.btn-success {
+    background-color: var(--color-success) !important;
+    border-color: var(--color-success) !important;
+}
+
+.btn-danger {
+    background-color: var(--color-danger) !important;
+    border-color: var(--color-danger) !important;
+}
+
+/* buttons: end */
+
+/* badges: start */
+.text-bg-primary {
+    background-color: var(--color-primary) !important;
+    color: #fff !important;
+}
+
+/* badges: end */
