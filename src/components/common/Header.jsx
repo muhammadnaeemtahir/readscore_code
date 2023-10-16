@@ -1,12 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
 
-import AppInfo from '../data/AppInfo.json'
+import Logo from '../../assets/logo.png'
 
 const Header = () => {
-    const { logo, name } = AppInfo
     const location = useLocation()
     const currentPath = location.pathname
-    console.log(currentPath)
 
     return (
         <>
@@ -14,7 +12,7 @@ const Header = () => {
                 <nav className='bg-body-tertiary py-3 mb-5'>
                     <div className="container-fluid d-flex align-items-center justify-content-center">
                         <Link to="/posts" className='d-md-block d-none'>
-                            <img src={logo} alt={name} className='img-fluid' width={100} />
+                            <img src={Logo} alt="logo" className='img-fluid' width={100} />
                         </Link>
                         <ul class="nav ms-md-auto">
                             <li class="nav-item mx-md-4 mx-2">

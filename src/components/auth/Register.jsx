@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom'
 
-import AppInfo from '../data/AppInfo.json'
+import Logo from '../../assets/logo.png'
+
 
 const Register = () => {
-    const { logo, name } = AppInfo
-
     const SubmitHandle = (e) => {
         e.preventDefault();
     }
@@ -20,7 +19,7 @@ const Register = () => {
                             <div className="auth-form-wrapper px-md-5 px-4">
                                 <div className="auth-form w-100">
                                     <div className="text-center">
-                                        <img src={logo} alt={name} className="img-fluid w-50" />
+                                        <img src={Logo} alt="logo" className="img-fluid w-50" />
                                     </div>
                                     <form className='mb-5' onSubmit={SubmitHandle}>
                                         <div className="mb-3">
