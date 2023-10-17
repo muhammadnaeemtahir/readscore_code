@@ -6,6 +6,7 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import Posts from "./components/post/Posts";
 import Books from "./components/book/Books";
+import Profile from "./components/profile/Profile";
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/posts" element={<Posts />} />
         <Route path="/books" element={<Books />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );
