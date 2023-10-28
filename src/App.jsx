@@ -7,6 +7,7 @@ import Register from "./components/auth/Register";
 import Posts from "./components/post/Posts";
 import Books from "./components/book/Books";
 import Profile from "./components/profile/Profile";
+import Gift from "./components/gift/Gift";
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/posts" element={<Posts />} />
         <Route path="/books" element={<Books />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/gift-books" element={<Gift />} />
       </Routes>
     </div>
   );

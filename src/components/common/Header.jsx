@@ -21,6 +21,11 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-item mx-md-4 mx-2">
+                                <Link to="/gift-books" className='nav-link'>
+                                    <i className={`fa-solid fa-gift text-success fs-1 ${currentPath === '/gift-books' ? 'active' : ''}`}></i>
+                                </Link>
+                            </li>
+                            <li className="nav-item mx-md-4 mx-2">
                                 <Link to="/books" className='nav-link'>
                                     <i className={`fa-solid fa-book text-success fs-1 ${currentPath === '/books' ? 'active' : ''}`}></i>
                                 </Link>

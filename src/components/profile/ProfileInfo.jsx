@@ -26,7 +26,9 @@ const ProfileInfo = () => {
                                 <div className="card-body">
                                     <section className="mb-3">
                                         <h3>About Me <button className="btn btn-sm btn-primary"><i className="fa fa-pen"></i></button> </h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                                        <p>
+                                            I am a passionate software developer with a strong zeal to work with emerging startups. I have a strong belief in learning by doing and that's why I always love to work on new projects to explore new domains.
+                                        </p>
                                     </section>
                                     <section className="mb-3">
                                         <h3>Recents Potos</h3>

@@ -1,4 +1,17 @@
+import React, { useState } from 'react';
+
 const Suggestions = () => {
+    const [followStatus, setFollowStatus] = useState('Follow');
+
+    const handleFollowClick = () => {
+        if (followStatus === 'Follow') {
+            setFollowStatus('Following');
+        } else {
+            setFollowStatus('Follow');
+        }
+    };
+
+
     return (
         <>
             <div className="card">
@@ -13,7 +26,9 @@ const Suggestions = () => {
                                 <small className="d-block"><i className="fa-solid fa-fire text-warning"></i> 15</small>
                             </p>
                         </div>
-                        <button className="btn"><span className="badge text-bg-primary">Follow</span></button>
+                        <button className="btn border-0" onClick={
+                            handleFollowClick
+                        }><span className="badge text-bg-primary">{followStatus}</span></button>
                     </div>
                     <div className="d-flex justify-content-between mb-3 suggestion">
                         <div className="d-flex align-items-center">
